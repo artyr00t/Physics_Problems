@@ -1,57 +1,36 @@
-## Section 1: Mechanics I
+**1. Projectile Motion**
+
+**A projectile is fired from the ground with an initial velocity of 100 m/s at an angle of 37° above the horizontal. Assume no air resistance. Derive the differential equations of motion in the horizontal and vertical directions. Determine the time of flight. Determine the maximum height. Determine the range.**
 
 ---
 
-### 1. Projectile Motion
-
-Projectile motion happens when an object is thrown into the air and only gravity acts upon it. We break the movement into two separate parts: **horizontal** ($x$) and **vertical** ($y$).
-
-**Given:**
-
-* Initial velocity ($v_0$): $100$ m/s
-* Launch angle ($\theta$): $37^\circ$
-* Assume gravity ($g$): $9.8$ m/s$^2$
-
-First, we find the starting speeds for each direction:
-
-* **Horizontal speed ($v_{0x}$):** $100 \cdot \cos(37^\circ) \approx 100 \cdot 0.8 = \mathbf{80 \text{ m/s}}$
-* **Vertical speed ($v_{0y}$):** $100 \cdot \sin(37^\circ) \approx 100 \cdot 0.6 = \mathbf{60 \text{ m/s}}$
-
-#### a) Differential Equations of Motion
-
-These equations describe how the position of the object changes over time based on the forces acting on it. Since we assume no air resistance, there is no force in the $x$ direction, and only gravity in the $y$ direction.
-
-* **Horizontal ($x$):** There is no acceleration.
-
-$$\frac{d^2x}{dt^2} = 0$$
-
-
-* **Vertical ($y$):** Gravity pulls the object down.
-
-$$\frac{d^2y}{dt^2} = -g$$
+**Step 1: Splitting the Speed (Velocity Components)**
+When you shoot the ball at an angle, it goes **forward** and **up** at the same time. We need to find these two speeds separately:
+* **Forward Speed ($v_{0x}$):** $100 \times \cos(37^\circ) = 100 \times 0.8 = 80 \text{ m/s}$
+* **Upward Speed ($v_{0y}$):** $100 \times \sin(37^\circ) = 100 \times 0.6 = 60 \text{ m/s}$
 
 
 
-#### b) Time of Flight ($t_{total}$)
+**Step 2: The Rules of the Move (Differential Equations)**
+This part is just a fancy way of saying: "Is anything pushing or pulling the ball?"
+* **Side-to-side ($x$):** There is no wind or air pushing it. So, the acceleration is zero. 
+    $$\frac{d^2x}{dt^2} = 0$$
+* **Up-and-down ($y$):** Gravity is pulling it down. So, the acceleration is $-g$.
+    $$\frac{d^2y}{dt^2} = -g$$
 
-The object stays in the air until it hits the ground again (when $y = 0$). The time it takes to go up and come back down is:
+**Step 3: Total Time in the Air (Time of Flight)**
+Imagine you throw a ball up at $60 \text{ m/s}$. Gravity ($9.8 \text{ m/s}^2$) takes about $6$ seconds to stop it at the top, and another $6$ seconds to bring it back down.
+* **Formula:** $T = \frac{2 \times \text{Upward Speed}}{g}$
+* **Calculation:** $T = \frac{2 \times 60}{9.8} \approx \mathbf{12.24 \text{ seconds}}$
 
-* Formula: $t = \frac{2 \cdot v_{0y}}{g}$
-* Calculation: $\frac{2 \cdot 60}{9.8} \approx \mathbf{12.24 \text{ seconds}}$
+**Step 4: The Highest Point (Maximum Height)**
+This is how high the ball goes before it starts falling. 
+* **Formula:** $H = \frac{(\text{Upward Speed})^2}{2g}$
+* **Calculation:** $H = \frac{60 \times 60}{2 \times 9.8} = \frac{3600}{19.6} \approx \mathbf{183.67 \text{ meters}}$
 
-#### c) Maximum Height ($H$)
 
-The object reaches its highest point when its vertical speed becomes zero for a split second.
 
-* Formula: $H = \frac{v_{0y}^2}{2g}$
-* Calculation: $\frac{60^2}{2 \cdot 9.8} = \frac{3600}{19.6} \approx \mathbf{183.67 \text{ meters}}$
-
-#### d) Range ($R$)
-
-The range is the total horizontal distance traveled. Since the horizontal speed ($80$ m/s) never changes, we just multiply it by the total time.
-
-* Formula: $R = v_{0x} \cdot t_{total}$
-* Calculation: $80 \cdot 12.24 \approx \mathbf{979.2 \text{ meters}}$
-
----
-
+**Step 5: How Far It Goes (Range)**
+To find the total distance, we take the **Forward Speed** (which never changes) and multiply it by the **Total Time** it was in the air.
+* **Formula:** $R = \text{Forward Speed} \times \text{Total Time}$
+* **Calculation:** $R = 80 \times 12.24 \approx \mathbf{979.2 \text{ meters}}$
