@@ -24,10 +24,15 @@ $$\theta = \arcsin(0.4) \approx \mathbf{23.58^\circ \text{ West of North}}$$
 
 **Step 3: Finding the Crossing Speed**
 Even though the boat moves at $5 \text{ m/s}$, some of that power is wasted fighting the river. We need to find the "useful" speed that actually goes straight North. We use the **Pythagorean Theorem** ($a^2 + b^2 = c^2$):
+
 $$\text{Speed}_{\text{North}}^2 + 2^2 = 5^2$$
+
 $$\text{Speed}_{\text{North}}^2 + 4 = 25$$
+
 $$\text{Speed}_{\text{North}}^2 = 21$$
+
 $$\text{Speed}_{\text{North}} = \sqrt{21} \approx \mathbf{4.58 \text{ m/s}}$$
+
 
 **Step 4: How Long Will It Take? (Time)**
 Now that we know the boat is moving North at $4.58 \text{ m/s}$, and the river is $200$ meters wide, we just divide:
