@@ -38,8 +38,11 @@ $f(t) = 26t^2 - 66t + 45$
 ### Step 3: Find the Minimum ($t$)
 
 We take the derivative and set it to zero:
+
 $f'(t) = 52t - 66$
+
 $52t = 66$
+
 $t = \frac{66}{52} \approx \mathbf{1.27 \text{ seconds}}$
 
 ### Step 4: Calculate the Distance
