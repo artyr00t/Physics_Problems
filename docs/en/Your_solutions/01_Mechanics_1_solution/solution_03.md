@@ -1,6 +1,6 @@
 ## 3. Path Intersection
 
-"Alice is moving along a path described by $A(t) = (2+t, 8-3t)$ and Bob is moving along a path $B(t) = (2t-1, 2t+2)$. Determine if their paths intersect. If yes, determine when and where they will collide. If not, determine the minimum distance between them and when it occurs."
+-Alice is moving along a path described by $A(t) = (2+t, 8-3t)$ and Bob is moving along a path $B(t) = (2t-1, 2t+2)$. Determine if their paths intersect. If yes, determine when and where they will collide. If not, determine the minimum distance between them and when it occurs.
 
 In this problem, we are looking at two people (Alice and Bob) moving through space over time ($t$). We need to determine if they ever stand on the same spot at the same time.
 
